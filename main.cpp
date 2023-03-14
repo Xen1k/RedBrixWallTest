@@ -26,6 +26,9 @@ int main()
         }
     } while (playerController->HandleInputAndMove());
 
+    delete gameFieldView;
+    delete gameFieldModel;
+    delete playerController;
     return 0;
 }
 

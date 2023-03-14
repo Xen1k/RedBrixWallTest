@@ -222,4 +222,8 @@ GameFieldModel::~GameFieldModel()
 	for (int i = 0; i < m_fieldSize; i++) 
 		delete[] m_fieldMatrix[i];
 	delete[] m_fieldMatrix;
+
+	for (int i = 0; i < m_fieldSize; i++)
+		delete[] m_rotatedFieldMatrix[i];
+	delete[] m_rotatedFieldMatrix;
 }
